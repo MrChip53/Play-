@@ -136,7 +136,7 @@ void CGSH_OpenGL::FlipImpl()
 	unsigned int dispHeight = (d.nH + 1);
 
 	bool halfHeight = GetCrtIsInterlaced() && GetCrtIsFrameMode();
-	if(halfHeight) dispHeight /= 2;
+	if(true) dispHeight /= 2;
 
 	FramebufferPtr framebuffer;
 	for(const auto& candidateFramebuffer : m_framebuffers)

@@ -270,7 +270,7 @@ void CMcServ::GetInfo(uint32* args, uint32 argsSize, uint32* ret, uint32 retSize
 	//  -1 if new formatted card
 	//  -2 if new unformatted card
 	//> -2 on error
-	ret[0] = 0;
+	ret[0] = -4;
 
 	//Many games seem to be sensitive to the delay response of this function:
 	//- Nights Into Dreams (issues 2 Syncs very close to each other, infinite loop if GetInfo is instantenous)
